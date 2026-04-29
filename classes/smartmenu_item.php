@@ -906,8 +906,8 @@ class smartmenu_item {
         $query = (object) [
             'select' => ['c.*'],
             'join' => [],
-            'where' => [],
-            'params' => [],
+            'where' => ['c.id <> :siteid'],
+            'params' => ['siteid' => SITEID],
         ];
 
         // Courses from categories.
