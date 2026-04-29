@@ -91,5 +91,5 @@
             {{#text}}{{{text}}}{{/text}}{{^text}}{{title}}{{/text}}
         </a>
     {{/submenulink}}
-    {{#divider}}<div class="dropdown-divider"></div>{{/divider}}
+    {{#divider}}<div class="dropdown-divider {{#itemdata.cssclass}} {{.}} {{/itemdata.cssclass}}"></div>{{/divider}}
 {{/items}}
